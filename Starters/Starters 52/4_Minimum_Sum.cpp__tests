@@ -1,0 +1,9 @@
+[
+	{
+		"test": "2\n2\n5 10\n3\n2 2 6\n",
+		"uncorrect_answers":
+		[
+			"10\n6"
+		]
+	}
+]
