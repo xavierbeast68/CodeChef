@@ -206,17 +206,37 @@ void solve()
     /*--Let's Code--*/
     read(n);
 
-    int end = sqrt(n);
-    ordered_set pq;
-    pq.insert(1);
-    for(int i=2; i<= end; i++)
+    // int end = sqrt(n);
+    // set<int> ans;
+    // for(int i=2; i<= end; i++)
+    // {
+    //     if(n%i==0)
+    //     {   
+    //         ans.insert(i);
+    //         ans.insert(n/i);
+    //     }
+    // }
+    // int a = 1;
+    // if(ans.size()>=2)
+    // {
+    //     int b = *(ans.begin());
+    //     int c = *(ans.rbegin());
+    //     cout << a << " " << b << " " << c << endl;
+    // }
+    // else
+    // {
+    //     println(-1);
+    // }
+    //* concise code->
+    for(int i=2; i< sqrt(n); i++)
     {
-        if(n%i==0)
+        if(n%i == 0)
         {   
-            pq.insert(i);
-            pq.insert(n/i);
+            cout << 1 << " " << i << " " << n/i << endl;
+            return;
         }
     }
+    println(-1);
 }
 
 signed main()
